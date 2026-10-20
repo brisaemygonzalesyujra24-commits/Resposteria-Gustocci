@@ -1,0 +1,121 @@
+/* Repostería Gustocci · estilos compartidos */
+:root{--rosa:#f7b6cc;--rosa2:#e0568f;--choco:#5b2a12;--cafe:#8b4513;--naranja:#f28c28;--oro:#f4c430;--oro2:#c98a2b;--crema:#fff6ea;--txt:#4a2a1a;--suave:#7a5a4a;--sombra:0 10px 28px rgba(91,42,18,.2);--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font:400 17px/1.65 "Nunito Sans",system-ui,Arial,sans-serif;color:var(--txt);background:radial-gradient(rgba(224,86,143,.11) 2px,transparent 2.5px) 0 0/28px 28px,var(--crema);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Lobster,cursive;font-weight:400;line-height:1.1;color:var(--choco)}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+.sec-t{font-size:clamp(34px,5vw,48px);text-align:center;margin-bottom:10px}
+.sec-s{text-align:center;color:var(--suave);max-width:620px;margin:0 auto 38px}
+
+/* Encabezado */
+.cab{position:sticky;top:0;z-index:60;background:var(--choco);box-shadow:0 4px 14px rgba(0,0,0,.3);border-bottom:3px solid var(--oro2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{font:400 28px Lobster,cursive;color:#ffd34e;text-decoration:none;text-shadow:0 2px 0 #000}
+.menu{display:flex;gap:4px;list-style:none}
+.menu a{display:block;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:9px 14px;border-radius:999px;transition:background .25s}
+.menu a:hover,.menu a.on{background:var(--rosa2)}
+.burger{display:none;background:none;border:2px solid var(--oro);color:#ffd34e;width:46px;height:46px;border-radius:12px;font-size:22px;cursor:pointer}
+
+/* Botones */
+.btn{position:relative;overflow:hidden;display:inline-block;text-align:center;border:0;cursor:pointer;text-decoration:none;font:800 16px "Nunito Sans",sans-serif;color:#fff;padding:15px 28px;border-radius:999px;box-shadow:0 5px 0 rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.2);transition:transform .25s,box-shadow .25s}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover{transform:translateY(-4px) scale(1.04)}.btn:hover::after{left:130%}
+.btn:active{transform:translateY(1px)}
+.b-cafe{background:var(--cafe)}.b-naranja{background:var(--naranja)}.b-oro{background:var(--oro);color:var(--choco)}.b-rosa{background:var(--rosa2)}
+.b-borde{background:#fff;color:var(--choco);border:2px solid var(--oro2)}
+
+/* Portada */
+.portada{padding:56px 0 40px;text-align:center;background:linear-gradient(180deg,rgba(247,182,204,.55),transparent)}
+.hero-grid{display:grid;grid-template-areas:". arriba ." "izq titulo der";grid-template-columns:1fr auto 1fr;align-items:center;gap:22px 30px}
+.hero-grid .btn{min-width:170px;font-size:18px;padding:17px 24px}
+.g-arriba{grid-area:arriba;justify-self:center}.g-izq{grid-area:izq;justify-self:end}.g-der{grid-area:der;justify-self:start}
+.titulo{grid-area:titulo;animation:entra 1s both}
+.titulo span{display:block;font-family:Lobster,cursive;text-shadow:3px 3px 0 var(--choco),-3px -3px 0 var(--choco),3px -3px 0 var(--choco),-3px 3px 0 var(--choco),0 8px 14px rgba(0,0,0,.25)}
+.titulo .r{font-size:clamp(30px,5.4vw,54px);color:#ffd34e}
+.titulo .g{font-size:clamp(60px,12vw,124px);color:#fff8dc;line-height:.95}
+.frase{max-width:600px;margin:30px auto 0;font-size:20px;color:var(--suave)}
+@keyframes entra{from{opacity:0;transform:translateY(24px) scale(.96)}}
+.banner{max-width:1000px;margin:10px auto 0;border:6px solid var(--oro2);outline:4px solid #fff;border-radius:20px;box-shadow:0 0 0 12px rgba(244,196,48,.45),0 26px 50px rgba(91,42,18,.4);overflow:hidden}
+.banner img{width:100%;height:auto}
+
+/* Tarjetas */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{position:relative;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra);border:2px solid #f6e3c3;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(91,42,18,.28);border-color:var(--oro)}
+.thumb{width:100%;height:205px;object-fit:cover;transition:transform .5s}
+.card:hover .thumb{transform:scale(1.06)}
+.card{overflow:hidden}
+.fb{display:grid;place-items:center;font-size:86px}
+.tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--rosa2);color:#fff;font-weight:800;font-size:13px;padding:4px 12px;border-radius:999px}
+.body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.body h3{font-size:28px}.body p{color:var(--suave);flex:1;margin-top:4px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.precio{font:800 22px "Nunito Sans";color:var(--rosa2)}
+.pick{border:2px solid var(--cafe);background:none;color:var(--cafe);border-radius:999px;padding:9px 18px;font:800 15px "Nunito Sans";cursor:pointer;transition:.25s}
+.pick:hover{background:var(--cafe);color:#fff}
+.bloque{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--sombra);border-top:6px solid var(--oro)}
+.bloque .ic{font-size:40px}.bloque h3{font-size:28px;margin:6px 0}.bloque p{color:var(--suave)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.band{background:linear-gradient(135deg,var(--rosa2),#b83b73);color:#fff;text-align:center;padding:58px 0}
+.band h1,.band h2{color:#fff;font-size:clamp(38px,6vw,60px);text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.band p{max-width:560px;margin:8px auto 0;font-size:18px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gal img{height:200px;width:100%;object-fit:cover;border-radius:var(--r);border:5px solid #fff;box-shadow:var(--sombra)}
+.cta{text-align:center}.cta .btn{margin:6px}
+
+/* Catálogo */
+.tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:28px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:2px solid var(--oro2);background:#fff;color:var(--choco);font:800 14px "Nunito Sans";padding:9px 16px;border-radius:999px;cursor:pointer;transition:.25s}
+.chip:hover{background:#fff0c9}.chip.on{background:var(--cafe);border-color:var(--cafe);color:#fff;transform:scale(1.05)}
+input,select,textarea{width:100%;padding:13px 14px;border:2px solid #ecd5b8;border-radius:12px;background:#fffdf9;color:var(--txt);font:inherit;font-size:16px}
+input:focus,select:focus,textarea:focus{border-color:var(--rosa2);outline:none;box-shadow:0 0 0 3px rgba(224,86,143,.25)}
+#buscar{max-width:300px}
+.vacio{text-align:center;color:var(--suave);padding:40px;grid-column:1/-1}
+dialog{margin:auto;border:0;border-radius:26px;max-width:520px;width:calc(100% - 32px);box-shadow:0 30px 70px rgba(0,0,0,.5);overflow:hidden;border-top:8px solid var(--oro)}
+dialog::backdrop{background:rgba(58,22,38,.65);backdrop-filter:blur(3px)}
+dialog[open]{animation:entra .35s both}
+dialog .thumb{height:220px}.mb{padding:22px 26px 28px}.mb h3{font-size:34px}.mb p{margin:8px 0}.mb .cat{color:var(--rosa2);font-weight:800}
+.mb .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.mb .btn{padding:12px 20px;font-size:15px;flex:1}
+.x{position:absolute;right:12px;top:10px;z-index:3;width:42px;height:42px;border-radius:50%;border:0;background:#fff;font-size:26px;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+
+/* Formularios */
+.form{max-width:760px;margin:0 auto;background:#fff;border-radius:26px;padding:34px;box-shadow:var(--sombra);border-top:8px solid var(--oro);display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}
+label{font-weight:800;font-size:15px;color:var(--cafe)}
+.err{color:#b3123f;font-size:14px;font-weight:700;min-height:0}
+.bad{border-color:#b3123f}
+.nota{font-size:14px;color:var(--suave);grid-column:1/-1}
+.resumen{max-width:760px;margin:26px auto 0;background:#fff8e1;border:3px dashed var(--oro2);border-radius:22px;padding:26px;display:none}
+.resumen.on{display:block;animation:entra .4s both}
+.resumen h3{font-size:32px}.resumen dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:14px 0}.resumen dt{font-weight:800;color:var(--cafe)}
+.wa{background:#25a244}
+.soc{display:inline-block;padding:10px 18px;border-radius:999px;background:#eee;color:#888;font-weight:700;margin:4px;cursor:not-allowed}
+
+/* Pie */
+.pie{background:var(--choco);color:#f8e3d1;padding:44px 0 28px;border-top:4px solid var(--oro2)}
+.pie .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.pie h4{color:#ffd34e;font-size:18px;margin-bottom:8px}.pie a{display:block;text-decoration:none;padding:3px 0}.pie a:hover{color:#ffd34e}
+.copy{text-align:center;font-size:14px;opacity:.7;margin-top:26px}
+.arriba{position:fixed;right:18px;bottom:20px;width:50px;height:50px;border-radius:50%;border:0;background:var(--rosa2);color:#fff;font-size:22px;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:.3s;z-index:50}
+.arriba.on{opacity:1;pointer-events:auto}
+
+/* Aparición */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+
+@media(max-width:860px){.grid,.gal{grid-template-columns:1fr 1fr}.dos,.pie .cols{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .burger{display:block}
+  .menu{position:absolute;top:100%;left:0;right:0;background:var(--choco);flex-direction:column;padding:10px 22px 18px;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s,opacity .35s,padding .35s;padding-top:0;padding-bottom:0}
+  .menu.open{max-height:420px;opacity:1;padding-top:10px;padding-bottom:18px}
+  .hero-grid{grid-template-areas:"titulo" "arriba" "izq" "der";grid-template-columns:1fr}
+  .hero-grid .btn{width:min(280px,100%)}.g-arriba,.g-izq,.g-der{justify-self:center}
+}
+@media(max-width:560px){.grid,.gal,.form{grid-template-columns:1fr}.form{padding:24px}.banner{border-width:4px;outline-width:3px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
