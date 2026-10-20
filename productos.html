@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos · Repostería Gustocci</title>
+<meta name="description" content="Catálogo de tortas, queques, cupcakes, galletas decoradas y especialidades de Repostería Gustocci en Oruro. Precios en bolivianos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="productos">
+<div id="cab"></div>
+<main>
+  <div class="band"><div class="wrap"><h1>Nuestros productos</h1><p>Elige tu favorito, consulta los detalles y resérvalo. Precios en bolivianos.</p></div></div>
+  <section>
+    <div class="wrap">
+      <div class="tools">
+        <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+        <div style="flex:1;min-width:220px;max-width:300px"><label for="buscar" class="sr" style="position:absolute;left:-9999px">Buscar producto</label><input id="buscar" type="search" placeholder="Buscar por nombre…" autocomplete="off"></div>
+      </div>
+      <p id="cuenta" style="color:var(--suave);margin-bottom:16px" aria-live="polite"></p>
+      <div class="grid" id="catalogo"></div>
+    </div>
+  </section>
+</main>
+<div id="pie"></div>
+</body>
+</html>
