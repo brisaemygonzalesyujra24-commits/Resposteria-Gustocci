@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/trfertrr.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=02e4c27c-e7b6-4121-b71a-89001aa4df61
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="hosting-provider" content="Netlify">
+<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=02e4c27c-e7b6-4121-b71a-89001aa4df61">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Repostería Gustocci</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    /* =========================
+BOTONES PRINCIPALES
+========================= */
+
+.botones-inicio{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.boton-inicio{
+display:inline-block;
+min-width:160px;
+padding:16px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+font-size:17px;
+color:white;
+box-shadow:0 5px 12px rgba(0,0,0,.25);
+transition:transform .3s, box-shadow .3s;
+}
+
+.boton-inicio:hover{
+transform:translateY(-5px) scale(1.04);
+box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+/* BOTÓN CAFÉ */
+.boton-cafe{
+background:#8b4513;
+}
+
+/* BOTÓN NARANJA */
+.boton-naranja{
+background:#f28c28;
+}
+
+/* BOTÓN AMARILLO */
+.boton-amarillo{
+background:#f4c430;
+color:#5a351f;
+}
+
+/* Adaptación para celular */
+@media(max-width:600px){
+
+```
+.botones-inicio{
+    flex-direction:column;
+    gap:12px;
+}
+
+.boton-inicio{
+    width:220px;
+}
+```
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff5ee;
+    color:#5a351f;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#8b4513;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 10px;
+    padding:10px 15px;
+    border-radius:20px;
+    display:inline-block;
+}
+
+nav a:hover{
+    background:#f48fb1;
+}
+
+/* =========================
+   INICIO
+========================= */
+
+#inicio{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(244,143,177,.72),rgba(244,143,177,.72)),
+    url("https://images.unsplash.com/photo-1565958011703-44f9829ba187");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.inicio-contenido{
+    padding:40px;
+}
+
+.inicio-contenido h1{
+    font-family:"Brush Script MT",cursive;
+    text-shadow:2px 2px 8px black;
+}
+
+.reposteria{
+    display:block;
+    color:#ffcc00;
+    font-size:45px;
+    letter-spacing:3px;
+}
+
+.gustocci{
+    display:block;
+    font-size:80px;
+    letter-spacing:5px;
+}
+
+.inicio-contenido p{
+    max-width:600px;
+    margin:20px auto;
+    font-size:20px;
+}
+
+.boton-principal{
+    display:inline-block;
+    background:#8b4513;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.boton-principal:hover{
+    background:#ffcc00;
+    color:#8b4513;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section{
+    padding:60px 7%;
+}
+
+.titulo{
+    text-align:center;
+    color:#8b4513;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+/* =========================
+   CONÓCENOS
+========================= */
+
+.conocenos-grid{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:25px;
+    max-width:1100px;
+    margin:0 auto;
+    justify-content:center;
+    align-items:stretch;
+}
+.tarjeta{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+    text-align:center;
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+.tarjeta img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+}
+
+.tarjeta-contenido{
+    padding:20px;
+}
+
+.tarjeta h3{
+    color:#8b4513;
+    margin-bottom:10px;
+}
+
+.tarjeta p{
+    color:#666;
+    line-height:1.5;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos{
+    background:#fff0f5;
+}
+
+.productos-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.producto{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.producto:hover{
+    transform:scale(1.03);
+}
+
+.producto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.producto-info{
+    padding:20px;
+}
+
+.producto-info h3{
+    color:#8b4513;
+    font-size:24px;
+}
+
+.producto-info p{
+    margin-top:10px;
+    color:#666;
+    line-height:1.5;
+}
+
+.precio{
+    color:#d2691e !important;
+    font-size:25px;
+    font-weight:bold;
+    margin-top:15px !important;
+}
+
+/* =========================
+   RESERVAS
+========================= */
+
+.reservas{
+    background:#fff5ee;
+}
+
+.formulario{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.formulario label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+    color:#8b4513;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.formulario textarea{
+    height:100px;
+    resize:none;
+}
+
+.btn-reserva{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    background:#d2691e;
+    border:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.btn-reserva:hover{
+    background:#8b4513;
+}
+
+/* =========================
+   CÓDIGO
+========================= */
+
+.codigo{
+    background:#2b211c;
+    color:white;
+}
+
+.codigo .titulo{
+    color:#ffcc00;
+}
+
+pre{
+    max-width:800px;
+    margin:auto;
+    background:#17120f;
+    padding:25px;
+    border-radius:15px;
+    overflow:auto;
+    color:#f48fb1;
+    font-size:15px;
+}
+
+/* =========================
+   PIE
+========================= */
+
+footer{
+    background:#8b4513;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .conocenos-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .productos-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav a{
+        margin:3px;
+        padding:8px;
+        font-size:14px;
+    }
+.inicio-contenido h1{
+    font-family:"Lobster", cursive;
+    text-align:center;
+    margin:10px 0 25px;
+    line-height:.9;
+}
+
+.reposteria{
+    display:block;
+    font-family:"Lobster", cursive;
+    font-size:58px;
+    color:#ffd34e;
+    letter-spacing:1px;
+    text-shadow:
+        -3px -3px 0 #6b2e0b,
+         3px -3px 0 #6b2e0b,
+        -3px  3px 0 #6b2e0b,
+         3px  3px 0 #6b2e0b;
+}
+
+.gustocci{
+    display:block;
+    font-family:"Lobster", cursive;
+    font-size:105px;
+    color:#fff8dc;
+    letter-spacing:1px;
+    text-shadow:
+        -5px -5px 0 #6b2e0b,
+         5px -5px 0 #6b2e0b,
+        -5px  5px 0 #6b2e0b,
+         5px  5px 0 #6b2e0b;
+}
+    .reposteria{
+        font-size:32px;
+    }
+
+    .gustocci{
+        font-size:50px;
+    }
+
+    .inicio-contenido p{
+        font-size:16px;
+    }
+
+    .conocenos-grid,
+    .productos-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:45px 5%;
+    }
+
+}
+/* =========================
+   BOTONES ALREDEDOR DEL TÍTULO
+========================= */
+
+.botones-alrededor{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.fila-botones{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:35px;
+}
+
+.fila-botones h1{
+    text-align:center;
+}
+
+.boton-alrededor{
+    display:inline-block;
+    min-width:150px;
+    padding:15px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    color:white;
+    box-shadow:0 5px 12px rgba(0,0,0,.25);
+    transition:.3s;
+    text-align:center;
+}
+
+.boton-alrededor:hover{
+    transform:scale(1.08);
+}
+
+.boton-alrededor.boton-cafe{
+    background:#8b4513;
+}
+
+.boton-alrededor.boton-naranja{
+    background:#f28c28;
+}
+
+.boton-alrededor.boton-amarillo{
+    background:#f4c430;
+    color:#5a351f;
+}
+
+.arriba{
+    margin-bottom:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+
+
+<section id="inicio">
+
+<div class="inicio-contenido">
+
+    <div class="botones-alrededor">
+
+        <!-- BOTÓN DE ARRIBA -->
+        <a href="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/trfertrr.html#conocenos" class="boton-alrededor boton-amarillo arriba">
+            CONÓCENOS
+        </a>
+
+        <!-- BOTONES A LOS LADOS DEL TÍTULO -->
+        <div class="fila-botones">
+
+            <a href="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/trfertrr.html#productos" class="boton-alrededor boton-cafe">
+                PRODUCTOS
+            </a>
+
+            <h1>
+
+                <span class="reposteria">
+                    REPOSTERÍA
+                </span>
+
+                <span class="gustocci">
+                    GUSTOCCI
+                </span>
+
+            </h1>
+
+            <a href="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/trfertrr.html#reservas" class="boton-alrededor boton-naranja">
+                RESERVAS
+            </a>
+
+        </div>
+
+    </div>
+
+    <p>
+        Bienvenidos a nuestra página, donde encontrarás
+        deliciosos postres hechos con amor y creatividad
+        para cada ocasión.
+    </p>
+
+</div>
+
+
+
+                                                  
+
+
+</section>
+
+<section id="conocenos">
+
+<h2 class="titulo">
+ CONÓCENOS
+</h2>
+
+<div class="conocenos-grid">
+
+
+<div class="tarjeta">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1558636508-e0db3814bd1d">
+
+<div class="tarjeta-contenido">
+
+<h3>Nuestra Historia</h3>
+
+<p>
+Gustocci nació del amor por la repostería
+artesanal hecha con dedicación, creatividad
+y mucho cariño.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="tarjeta">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1578985545062-69928b1d9587">
+
+<div class="tarjeta-contenido">
+
+<h3>Ubicación</h3>
+
+<p>
+Estamos en Oruro - Bolivia, ofreciendo
+productos frescos y deliciosos para
+nuestros clientes.
+</p>
+
+</div>
+
+</div>
+
+<div class="tarjeta">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1556742049-0cfed4f6a45d">
+
+<div class="tarjeta-contenido">
+
+<h3>Contacto</h3>
+
+<p>
+ +591 70420780
+<br><br>
+ gustocci@gmail.com
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+<section id="productos" class="productos">
+
+<h2 class="titulo">
+ NUESTROS PRODUCTOS
+</h2>
+
+<div class="productos-grid">
+
+
+<!-- TORTA CHOCOLATE -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1578985545062-69928b1d9587">
+
+<div class="producto-info">
+
+<h3>Torta de Chocolate</h3>
+
+<p>
+Deliciosa torta rellena con crema
+y cobertura de chocolate.
+</p>
+
+<p class="precio">
+Bs. 120
+</p>
+
+</div>
+
+</div>
+
+
+<!-- TORTA FRESA -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1535141192574-5d4897c12636">
+
+<div class="producto-info">
+
+<h3>Torta de Fresa</h3>
+
+<p>
+Torta suave decorada con crema
+chantillí y fresas.
+</p>
+
+<p class="precio">
+Bs. 130
+</p>
+
+</div>
+
+</div>
+
+
+<!-- QUEQUE -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1603532648955-039310d9ed75">
+
+<div class="producto-info">
+
+<h3>Queque de Vainilla</h3>
+
+<p>
+Queque esponjoso ideal para
+compartir en familia.
+</p>
+
+<p class="precio">
+Bs. 45
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CUPCAKE -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1486427944299-d1955d23e34d">
+
+<div class="producto-info">
+
+<h3>Cupcake de Chocolate</h3>
+
+<p>
+Cupcake decorado con deliciosa
+crema de chocolate.
+</p>
+
+<p class="precio">
+Bs. 12
+</p>
+
+</div>
+
+</div>
+
+
+<!-- TRES LECHES -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1571115177098-24ec42ed204d">
+
+<div class="producto-info">
+
+<h3>Torta Tres Leches</h3>
+
+<p>
+Suave y deliciosa torta preparada
+con una mezcla de tres leches.
+</p>
+
+<p class="precio">
+Bs. 125
+</p>
+
+</div>
+
+</div>
+
+
+<!-- GALLETAS -->
+
+<div class="producto">
+
+<img src="file:///C:/Users/ULTRA%207/Documents/Mis%20formas/_private/Reposter%C3%ADa%20Gustocci%20stb_files/photo-1558961363-fa8fdf82db35">
+
+<div class="producto-info">
+
+<h3>Galletas Decoradas</h3>
+
+<p>
+Galletas dulces decoradas para
+ocasiones especiales.
+</p>
+
+<p class="precio">
+Bs. 25
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+<section id="reservas" class="reservas">
+
+<h2 class="titulo">
+RESERVA CON ANTICIPACIÓN
+</h2>
+
+<div class="formulario">
+
+<form>
+
+<label>
+Nombre
+</label>
+
+<input type="text" placeholder="Ingrese su nombre" required="">
+
+
+<label>
+Apellido
+</label>
+
+<input type="text" placeholder="Ingrese su apellido" required="">
+
+
+<label>
+Teléfono o WhatsApp
+</label>
+
+<input type="tel" placeholder="Ingrese su número" required="">
+
+
+<label>
+Tipo de Producto
+</label>
+
+<select required="">
+
+<option value="">
+Seleccione un producto
+</option>
+
+<option>
+Torta de Chocolate
+</option>
+
+<option>
+Torta de Vainilla
+</option>
+
+<option>
+Torta Tres Leches
+</option>
+
+<option>
+Queque Marmoleado
+</option>
+
+<option>
+Queque de Naranja
+</option>
+
+<option>
+Queque de Chocolate
+</option>
+
+<option>
+Cupcakes
+</option>
+
+<option>
+Galletas Decoradas
+</option>
+
+<option>
+Brownies
+</option>
+
+</select>
+
+
+<label>
+Fecha de reserva
+</label>
+
+<input type="date" required="">
+
+
+<label>
+Mensaje adicional
+</label>
+
+<textarea placeholder="Escriba aquí algún detalle de su pedido..."></textarea>
+
+
+<button type="submit" class="btn-reserva" onclick="alert('¡Tu solicitud de reserva fue enviada! 🍰')">
+ENVIAR RESERVA
+</button>
+
+</form>
+
+</div>
+
+</section>
+<p>
+2026 Repostería Gustocci 
+</p>
+
+<p>
+Más que postres, creamos momentos especiales.
+</p>
+
+
+
+
+<script async="" src="file:///C:/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="02e4c27c-e7b6-4121-b71a-89001aa4df61" data-app-host="app.netlify.com">
+    
+</script>
+<script async="" src="file:///C:/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="61573647-8658-48ad-843a-fc965d3dcd5d" data-app-host="app.netlify.com"></script>
+
+</body></html>
